@@ -9,7 +9,7 @@ printf("enter your choice:");
 scanf("%d",&ch);
 switch(ch)
 {
- case 1:printf("enter the data to be inserted:");
+ case 1:x:printf("enter the data to be inserted:");
        scanf("%d",&data);
        
         if(rear==n-1)
@@ -19,25 +19,31 @@ switch(ch)
           rear=rear+1;
           q[rear]=data;
         }
+         printf("Do You Want to Add More?\n");
+          scanf("%s",%c);
+         if (c=='y')
+          goto x;
+       
 break;
- case 2:
+ case 2:y:
 if(rear==-1)
          printf("queue underflow");
        else
         {
-         data=q[rear];
-         rear=rear-1;
-printf("%d is enqueued...",data);
+         front = front +1;
+         data = q[front];
+         printf("%d is dequeued",data);
         }
+  printf("Do you want to pop more?\n");
+  scanf("%s",&c);
+  if (c=='y')
+   goto y;
 break;
  case 3:
-      if(rear==-1 && front==-1)
-      {
-       printf("no elements");
-      }
-for(i=0;i<=rear;i++)
-        printf("%d",q[i]);
- break;
+      
+     for(int i=front+1; i<=rear; i++)
+      printf("%d\t",q[i]);
+      break;
  default :printf("wrong choice");
 }
 char c;
