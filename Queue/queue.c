@@ -2,6 +2,7 @@
 void main()
 {
  int q[5],ch,data,rear=-1,front=-1,n=5,i;
+ char c;
 printf("\t\t Queue operations\n");
 printf("1.enqueue\n2.dequeue\n3.display\n");
 v:
@@ -46,7 +47,7 @@ break;
       break;
  default :printf("wrong choice");
 }
-char c;
+
 printf("\ndo you want to continue");
 scanf("%s",&c);
 if(c=='y')
