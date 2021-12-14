@@ -21,7 +21,7 @@ switch(ch)
           q[rear]=data;
         }
          printf("Do You Want to Add More?\n");
-          scanf("%s",%c);
+          scanf("%s",&c);
          if (c=='y')
           goto x;
        
